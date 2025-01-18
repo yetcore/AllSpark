@@ -7,7 +7,7 @@ import "./carousel.css";
 import { Pagination } from "swiper/modules";
 import ImageOverlay from "./ImageOverlay";
 
-export default function MyCarousel() {
+export default function MyCarousel({ onClickBox }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleSlideChange = (swiper) => {
     setCurrentIndex(swiper.activeIndex);
@@ -45,7 +45,10 @@ export default function MyCarousel() {
             <ImageOverlay />
           </SwiperSlide>
         </Swiper>
-        <div className={`join-module ${currentIndex === 0 ? "show" : "hide"}`}>
+        <div
+          className={`join-module ${currentIndex === 0 ? "show" : "hide"}`}
+          onClick={onClickBox}
+        >
           <div className="join-content">
             <p>加入我们</p>
             <p>Join us</p>

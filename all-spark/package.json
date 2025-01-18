@@ -8,10 +8,7 @@
     "@mui/material": "^6.3.1",
     "antd": "^5.23.0",
     "axios": "^1.7.9",
-<<<<<<< Updated upstream
-=======
     "bootstrap": "^5.3.3",
->>>>>>> Stashed changes
     "cra-template": "1.2.0",
     "echarts": "^5.6.0",
     "echarts-for-react": "^3.0.2",
